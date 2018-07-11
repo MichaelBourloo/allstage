@@ -1,7 +1,7 @@
-# Minisite for Spada !
+# Minisite for all stage !
 
 ## Lien du site ?
-[https://michaelbourloo.be/spada](https://michaelbourloo.be/spada)
+[https://michaelbourloo.be/allstage](https://michaelbourloo.be/spada)
 
 ## Langages utilisés ?
 
@@ -11,7 +11,7 @@
 
 ## Responsive ?
 
-Oui, il est +/- responsive! a 85%.
+Il est +/- responsive! a 85%.
 
 ## A venir 
 
