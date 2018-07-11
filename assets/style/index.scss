@@ -1,0 +1,216 @@
+@import "partial/left";
+@import "partial/contact";
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(90deg, rgb(251,241,241) 50%, rgb(163,171,172)  50%);
+    margin: 0px;
+}
+
+.contener {
+    display: flex;
+    width: 100%;  
+    margin: 0 auto;   
+} 
+
+// coté droit presentation spada.be
+#headRight {        
+    background: #a3abac; ;    
+    opacity: 0.8;    
+    width: 50vw;
+    height: 125vh;
+    // border: 1px solid;
+    // border-color: #50eb90;
+
+    #spada {
+        margin-left: 5vw;
+        width: 78%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.815);
+        font-size: 9vh;
+        font-family: 'Lobster', cursive;
+    }
+
+    .stage {
+        text-decoration-line: overline;
+        text-decoration-color: #19a29b;
+        text-align: center;
+        font-weight: bold;   
+        padding-bottom: 5vh;
+        color: rgba(0, 0, 0, 0.815);
+        margin-bottom: 3vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 4vh;
+        font-family: 'Dosis', sans-serif;
+
+    }
+
+    .why {        
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08);            
+        border-radius: 5px;   
+        font-weight: bold;    
+        text-align: center;
+        color: rgba(0, 0, 0, 0.815);
+        margin-top: 3vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 175%;
+        font-family: 'Dosis', sans-serif;
+        letter-spacing: 3px;
+    }
+
+    #itemLeft {        
+        text-align: left;
+        padding-right: 15vw;
+        margin-bottom: 4vh; 
+        font-weight: normal;
+        font-style: italic;
+        font-size: 100%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgba(0, 0, 0, 0.815);
+        margin-top: 5vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        
+    }
+
+    #itemRight {        
+        text-align: left;
+        padding-left: 15vw;
+        margin-left: 15vw;
+        margin-bottom: 4vh;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 100%;
+        font-family: 'Open Sans', sans-serif;
+        color: rgba(0, 0, 0, 0.815);
+        margin-top: 5vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    // #item3 {        
+    //     text-align: left;
+    //     padding-right: 15vw;
+    //     margin-bottom: 4vh;
+    //     font-weight: normal;
+    //     font-style: italic;
+    // }
+
+    // #item4 {        
+    //     text-align: left;
+    //     margin-left: 15vw;
+    //     margin-bottom: 1vh;
+    //     font-weight: normal;
+    //     font-style: italic;
+    // }    
+
+    .img {
+
+        #choco {   
+            margin-top: 2vh;     
+            margin-left: 22vw;
+            width: 100px;
+            height: 100px;
+            
+        }    
+    }
+
+    button:hover {
+        cursor: pointer
+    }
+
+    button {
+        background: #19a29b; outline: none;
+        position: relative;
+        border: 1px inset whitesmoke;
+        padding: 20px 60px;
+        overflow: hidden;
+        border-radius: 5px;       
+        margin-left: 15vw;
+        margin-top: 10vh;
+        margin-bottom: 4vh;
+    }
+
+    button:hover:before {
+        opacity: 1; transform: translate(0,0);
+    }
+
+    button:before {
+        content: attr(data-hover);
+        position: absolute;
+        top: 1.8em; left: 0;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: whitesmoke;
+        font-weight: 800;
+        font-size: .8em;
+        opacity: 0;
+        transform: translate(-100%, 0);
+        transition: all .3s ease-in-out;
+    }
+
+    button:hover div{
+        opacity: 0; transform: translate(100%,0);
+        
+    }
+    button div {
+        text-transform: uppercase;
+        color: whitesmoke;
+        letter-spacing: 5px;
+        font-weight: 900;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    #headRight {
+        width: 45.2vw;
+
+        #spada {
+            
+            // transform: translateX(33px);
+            font-size: 5vh;
+        }
+
+        .stage {
+            text-decoration-line: none;
+            font-size: 3vh;
+        }
+
+        .why {
+            margin-right: 0vw;
+            font-size: 84%;
+        }
+
+        .img {
+            #choco {   
+                display: none;             
+                margin-left: 15vw;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        #itemLeft {
+            padding-right: 11vw;
+            margin-left: 5vw;
+            font-size: 2vh;
+        }
+
+        #itemRight {
+            font-size: 2vh;
+            margin-left: 2vw;
+        }        
+
+        #btn5 {
+            padding: 13px 12px;
+            margin-left: 3vw;
+        }
+    }
+}
